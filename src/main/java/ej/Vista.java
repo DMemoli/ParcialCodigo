@@ -35,7 +35,7 @@ public class Vista {
         f.getContentPane().add(boton);
         f.getContentPane().add(scrollCodigo);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setSize(950, 280);
+        f.setSize(930, 270);
         f.setLocationRelativeTo(null);
         f.setVisible(true);
 
