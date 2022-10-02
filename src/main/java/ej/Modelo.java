@@ -6,17 +6,17 @@ import java.sql.*;
 
 
 public class Modelo {
-
+    String url = "localhost";
+    String dbName = "codigo";
     private String jdbcDriver;
-    private String dbName;
     private String urlRoot;
 
     private ActionListener listener;
 
-    public Modelo(String url, String dbName) {
+    public Modelo() {
         jdbcDriver = "com.mysql.cj.jdbc.Driver";
         urlRoot = "jdbc:mysql://" + url + "/";
-        this.dbName = dbName;
+
         listener = null;
 
         try {
